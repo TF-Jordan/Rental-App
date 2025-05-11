@@ -1,6 +1,6 @@
 import {Tabs} from 'expo-router'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import {Ionicons} from "@expo/vector-icons";
 
 export default function TabLayout(){
@@ -20,6 +20,18 @@ export default function TabLayout(){
                         <Ionicons name="car-outline" size={size} color={color} />
                     ),
                 }}/>
+
+            <Tabs.Screen
+                name='Conducteurs'
+                options={{
+                    title:"Conducteurs",
+                    tabBarIcon: ({ color, size }) => (
+                    <MaterialCommunityIcons name="steering" size={size} color={color} />
+                    ),
+                }}/>
+
+
+
         </Tabs>
     )
 }

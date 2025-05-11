@@ -1,12 +1,13 @@
 // app/tabs/Dashboard.tsx
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, useWindowDimensions } from 'react-native';
+import { FlatList,View, Text, StyleSheet, useWindowDimensions } from 'react-native';
 import HEADER from "@/components/Header";
-import StatCard from "@/components/dashboard/StatCard";
 import TabSelector from "@/components/TabSelector";
 import GraphStatCar from "@/components/dashboard/GraphStat";
-
-import { FontAwesome5, MaterialIcons, Feather, Entypo } from '@expo/vector-icons';
+// @ts-ignore
+import DriverCard, { Driver } from '@/components/Driver/DriverCard';
+import driversData from '@/assets/Drivers/drivers.json';
+import {Feather, Entypo } from '@expo/vector-icons';
 
 export default function Dashboard() {
     const { width } = useWindowDimensions();
@@ -26,26 +27,27 @@ export default function Dashboard() {
                     setActiveTab={setActiveTab} // Permet de gérer l'état d'activation
                 />
 
-                <Text style={styles.title}>Tableau de bord</Text>
+                <Text style={styles.title}>Vos conducteurs</Text>
                 <Text style={styles.subtitle}>
-                    Aperçu de la performance et des statistiques de votre compagnie
+                    Une vue générale de vos conducteurs
                 </Text>
+
             </View>
 
-            <ScrollView style={styles.container}>
                 {/* Affichage conditionnel de la vue en fonction de l'onglet sélectionné */}
                 {activeTab === 'general' && (
-                    <>
-                        <StatCard label="Véhicules" bodyText="70" bottomText='25% depuis le mois dernier' icon={<FontAwesome5 name="car" size={24} color="#00BFFF" />} />
-                        <StatCard label="Chauffeurs" bodyText="20" bottomText='25% depuis le mois dernier' icon={<Feather name="user" size={24} color="#00BFFF" />} />
-                        <StatCard label="Revenus" bodyText="1008776 XAF" bottomText='25% depuis le mois dernier' icon={<MaterialIcons name="attach-money" size={24} color="#00BFFF" />} />
-                        <StatCard label="Revenus" bodyText="20" bottomText='25% depuis le mois dernier' icon={<Feather name="bar-chart-2" size={24} color="#00BFFF" />} />
-                    </>
+                    //extrait les conducturs et affiche
+                    <FlatList
+                        data={driversData as Driver[]}
+                        keyExtractor={(item) => item.id}
+                        renderItem={({ item }) => <DriverCard driver={item} />}
+                        contentContainerStyle={{ padding: 16 }}
+                    />
                 )}
                 {activeTab === 'stats' && (
                     <GraphStatCar enService={45} autre={40} indisponible={15} total={100} />
                 )}
-            </ScrollView>
+
         </>
     );
 }

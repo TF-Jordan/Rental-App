@@ -1,26 +1,35 @@
 // components/TabSelector.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { Entypo, Feather } from '@expo/vector-icons';
 
-export default function TabSelector() {
-    const [active, setActive] = useState('general');
+type ButtonProps = {
+    titre1: string,
+    titre2: string,
+    icon1: React.ReactNode,
+    icon2: React.ReactNode,
+    activeTab: string,
+    setActiveTab: (tab: string) => void
+};
+
+export default function TabSelector({
+                                        titre1, titre2, icon1, icon2, activeTab, setActiveTab
+                                    }: ButtonProps) {
 
     return (
         <View style={styles.container}>
             <TouchableOpacity
-                style={[styles.tab, active === 'general' && styles.activeTab]}
-                onPress={() => setActive('general')}
+                style={[styles.tab, activeTab === 'general' && styles.activeTab]}
+                onPress={() => setActiveTab('general')}
             >
-                <Entypo name="grid" size={16} color={active === 'general' ? '#00bfff' : '#000'} />
-                <Text style={[styles.tabText, active === 'general' && styles.activeText]}>Vue Générale</Text>
+                {icon1}
+                <Text style={[styles.tabText, activeTab === 'general' && styles.activeText]}>{titre1}</Text>
             </TouchableOpacity>
             <TouchableOpacity
-                style={[styles.tab, active === 'stats' && styles.activeTab]}
-                onPress={() => setActive('stats')}
+                style={[styles.tab, activeTab === 'stats' && styles.activeTab]}
+                onPress={() => setActiveTab('stats')}
             >
-                <Feather name="bar-chart-2" size={16} color={active === 'stats' ? '#00BFFF' : '#000'} />
-                <Text style={[styles.tabText, active === 'stats' && styles.activeText]}>Statistiques</Text>
+                {icon2}
+                <Text style={[styles.tabText, activeTab === 'stats' && styles.activeText]}>{titre2}</Text>
             </TouchableOpacity>
         </View>
     );
@@ -29,17 +38,19 @@ export default function TabSelector() {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        alignItems:'center',
-        alignContent:'center',
+        alignItems: 'center',
+        alignContent: 'center',
         padding: 16,
-        flex:1,
-        justifyContent:'center',
+        flex: 1,
+        justifyContent: 'center',
+        marginRight:12,
+        marginLeft:12
 
     },
     tab: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent:'center',
+        justifyContent: 'center',
         paddingHorizontal: 12,
         paddingVertical: 8,
         backgroundColor: '#f1f1f1',
@@ -51,7 +62,6 @@ const styles = StyleSheet.create({
         elevation: 5,
         shadowColor: '#000',
         shadowOpacity: 0.2,
-
     },
     activeTab: {
         backgroundColor: '#fff',
