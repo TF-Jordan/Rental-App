@@ -26,9 +26,9 @@ export default function Dashboard() {
                     setActiveTab={setActiveTab} // Permet de gérer l'état d'activation
                 />
 
-                <Text style={styles.title}>Tableau de bord</Text>
+                <Text style={styles.title}>Vos conducteurs</Text>
                 <Text style={styles.subtitle}>
-                    Aperçu de la performance et des statistiques de votre compagnie
+                    Une vue générale de vos conducteurs
                 </Text>
             </View>
 
@@ -36,10 +36,6 @@ export default function Dashboard() {
                 {/* Affichage conditionnel de la vue en fonction de l'onglet sélectionné */}
                 {activeTab === 'general' && (
                     <>
-                        <StatCard label="Véhicules" bodyText="70" bottomText='25% depuis le mois dernier' icon={<FontAwesome5 name="car" size={24} color="#00BFFF" />} />
-                        <StatCard label="Chauffeurs" bodyText="20" bottomText='25% depuis le mois dernier' icon={<Feather name="user" size={24} color="#00BFFF" />} />
-                        <StatCard label="Revenus" bodyText="1008776 XAF" bottomText='25% depuis le mois dernier' icon={<MaterialIcons name="attach-money" size={24} color="#00BFFF" />} />
-                        <StatCard label="Revenus" bodyText="20" bottomText='25% depuis le mois dernier' icon={<Feather name="bar-chart-2" size={24} color="#00BFFF" />} />
                     </>
                 )}
                 {activeTab === 'stats' && (
