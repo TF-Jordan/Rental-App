@@ -1,13 +1,8 @@
 // app/tabs/Dashboard.tsx
 import React, { useState } from 'react';
-import { FlatList,View, Text, StyleSheet, useWindowDimensions } from 'react-native';
 import HEADER from "@/components/Header";
 import TabSelector from "@/components/TabSelector";
 import GraphStatCar from "@/components/dashboard/GraphStat";
-// @ts-ignore
-import DriverCard, { Driver } from '@/components/Driver/DriverCard';
-import driversData from '@/assets/Drivers/drivers.json';
-import {Feather, Entypo } from '@expo/vector-icons';
 
 export default function Dashboard() {
     const { width } = useWindowDimensions();
@@ -31,23 +26,14 @@ export default function Dashboard() {
                 <Text style={styles.subtitle}>
                     Une vue générale de vos conducteurs
                 </Text>
-
             </View>
 
                 {/* Affichage conditionnel de la vue en fonction de l'onglet sélectionné */}
                 {activeTab === 'general' && (
-                    //extrait les conducturs et affiche
-                    <FlatList
-                        data={driversData as Driver[]}
-                        keyExtractor={(item) => item.id}
-                        renderItem={({ item }) => <DriverCard driver={item} />}
-                        contentContainerStyle={{ padding: 16 }}
-                    />
                 )}
                 {activeTab === 'stats' && (
                     <GraphStatCar enService={45} autre={40} indisponible={15} total={100} />
                 )}
-
         </>
     );
 }
