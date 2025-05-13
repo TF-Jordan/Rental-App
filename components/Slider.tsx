@@ -36,20 +36,23 @@ const FilterSlider: React.FC<FilterSliderProps> = ({
         <View style={styles.container}>
             <View style={styles.row}>
                 <Text style={styles.label}>{label}</Text>
+                <View style={styles.sliderContainer}>
+                    <Slider
+                        containerStyle={styles.slider}
+                        value={range}
+                        onValueChange={handleChange}
+                        minimumValue={min}
+                        maximumValue={max}
+                        step={step}
+                        minimumTrackTintColor="#007AFF"
+                        maximumTrackTintColor="#ccc"
+                        thumbTintColor="#007AFF"
+                    />
+                </View>
                 <Text style={styles.value}>
                     {range[0]} - {range[1]} {suffix}
                 </Text>
             </View>
-            <Slider
-                value={range}
-                onValueChange={handleChange}
-                minimumValue={min}
-                maximumValue={max}
-                step={step}
-                minimumTrackTintColor="#007AFF"
-                maximumTrackTintColor="#ccc"
-                thumbTintColor="#007AFF"
-            />
         </View>
     );
 };
@@ -57,22 +60,31 @@ const FilterSlider: React.FC<FilterSliderProps> = ({
 const styles = StyleSheet.create({
     container: {
         marginVertical: 10,
-        width: '50%',
-        marginLeft:10
+        paddingHorizontal: 10,
     },
     row: {
         flexDirection: 'row',
+        alignItems: 'center',
         justifyContent: 'space-between',
-        marginBottom: 6,
     },
     label: {
         fontSize: 16,
         fontWeight: '500',
+        minWidth: 60, // Pour assurer une largeur minimale pour le label
+    },
+    sliderContainer: {
+        flex: 1,
+        marginHorizontal: 10,
+    },
+    slider: {
+        width: '100%',
     },
     value: {
         fontSize: 16,
         fontWeight: '500',
         color: '#007AFF',
+        minWidth: 80, // Pour assurer une largeur minimale pour les valeurs
+        textAlign: 'right',
     },
 });
 
