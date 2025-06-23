@@ -35,8 +35,10 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight ?? 20 : 40,
         paddingHorizontal: 16,
-        paddingBottom: 1,
-        height: "50%",
+        height: "60%",
+        paddingBottom: 24,
+        borderBottomLeftRadius: 24,
+        borderBottomRightRadius: 24,
         },
     topBar: {
         flexDirection: 'row',

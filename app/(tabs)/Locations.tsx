@@ -132,28 +132,6 @@ const LocationsScreen: React.FC = () => {
                         {filteredLocations.length} location{filteredLocations.length > 1 ? 's' : ''}
                     </Text>
                 </View>
-
-                {/* Barre de recherche */}
-                <View style={styles.searchContainer}>
-                    <View style={styles.searchInputContainer}>
-                        <Ionicons name="search" size={20} color="#6B7280" style={styles.searchIcon} />
-                        <TextInput
-                            style={styles.searchInput}
-                            placeholder="Rechercher une location..."
-                            placeholderTextColor="#9CA3AF"
-                            value={searchQuery}
-                            onChangeText={setSearchQuery}
-                        />
-                        {searchQuery.length > 0 && (
-                            <TouchableOpacity
-                                onPress={() => setSearchQuery('')}
-                                style={styles.clearButton}
-                            >
-                                <Ionicons name="close-circle" size={20} color="#6B7280" />
-                            </TouchableOpacity>
-                        )}
-                    </View>
-                </View>
             </LinearGradient>
 
             {/* Filtres */}
