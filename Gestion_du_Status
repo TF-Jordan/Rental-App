@@ -1,0 +1,319 @@
+// types/CarProps.ts - Interface mise à jour
+
+export type VehicleStatus = 'available' | 'unavailable' | 'maintenance' | 'reserved' | 'out_of_service';
+
+export interface CarProps {
+    id: number;                   // Ajouté pour l'identifiant unique
+    type?: string;
+    brand?: string;
+    model?: string;
+    year?: number;
+    rating?: number;
+    passenger?: number;
+    description: string;
+    pricePerDay: number;
+    vin?: string;
+    
+    documents?: {
+        registration_certificate: string;
+        technical_inspection: string;
+        insurance: string;
+        tax_sticker: string[];
+    };
+    
+    fonctionnalities: {
+        air_condition: boolean;
+        usb_input: boolean;
+        seat_belt: boolean;
+        audio_input: boolean;
+        child_seat: boolean;
+        bluetooth: boolean;
+        sleeping_bed: boolean;
+        onboard_computer: boolean;
+        gps: boolean;
+        luggage: boolean;
+        water: boolean;
+        additional_covers: boolean;
+    };
+
+    engine: {
+        type?: string;
+        horsepower?: number;
+        capacity?: number;
+    };
+
+    transmission?: string;
+    color?: string;
+    
+    fuel_efficiency?: {
+        city?: string;
+        highway?: string;
+    };
+
+    license_plate: string;
+
+    registration?: {
+        state?: string;
+        expiry?: Date;
+    };
+
+    owner?: {
+        name?: string;
+        address?: string;
+        phone?: string;
+        email?: string;
+    };
+
+    service_history: {
+        date?: Date;
+        service_type?: string;
+        mileage?: number;
+        provider?: string;
+    }[];
+
+    insurance?: {
+        provider?: string;
+        policy_number?: string;
+        expiry?: Date;
+    };
+    
+    agency?: {
+        id: number;
+    };
+
+    images: string[];
+
+    reviews: {
+        id?: number;
+        reviewer_name: string;
+        reviewer_id?: number;
+        comment: string;
+        rating: number;
+    }[];
+    
+    favorite?: boolean;
+    
+    // === SYSTÈME DE STATUT AMÉLIORÉ ===
+    
+    // Ancien système (gardé pour compatibilité)
+    available: boolean;
+    
+    // Nouveau système de statut détaillé
+    status?: VehicleStatus;           // Statut principal
+    
+    // Informations spécifiques pour chaque statut
+    maintenance?: {
+        is_in_maintenance: boolean;
+        maintenance_type?: string;    // "routine", "repair", "inspection"
+        scheduled_end?: Date;
+        description?: string;
+    };
+    
+    reservation?: {
+        is_reserved: boolean;
+        reserved_by?: number;         // ID du client
+        reservation_start?: Date;
+        reservation_end?: Date;
+        reservation_id?: string;
+    };
+    
+    out_of_service?: {
+        is_out_of_service: boolean;
+        reason?: string;              // "accident", "damage", "retired"
+        since?: Date;
+        estimated_return?: Date;
+    };
+    
+    // Informations de disponibilité avancées
+    availability?: {
+        next_available_date?: Date;
+        blocked_dates?: Date[];       // Dates spécifiques bloquées
+        seasonal_unavailable?: {      // Indisponibilité saisonnière
+            start_date: Date;
+            end_date: Date;
+            reason: string;
+        }[];
+    };
+
+    // Callbacks (optionnels)
+    onLike?: (id: number) => void;
+    onDislike?: (id: number) => void;
+    onEdit?: (id: number) => void;
+    onDelete?: (id: number) => void;
+}
+
+// ===========================================
+// utils/VehicleStatusHelper.ts - Mise à jour
+// ===========================================
+
+export type VehicleStatusInfo = {
+    color: string;
+    text: string;
+    bgColor: string;
+};
+
+export type VehicleStatusKey = 'available' | 'unavailable' | 'maintenance' | 'reserved' | 'out_of_service';
+
+// Votre fonction existante (gardée pour compatibilité)
+export const CarStatusInfo = (available?: boolean): VehicleStatusInfo => {
+    if (available) {
+        return { color: '#10B981', text: 'Disponible', bgColor: '#ECFDF5' };
+    } else {
+        return { color: '#EF4444', text: 'Indisponible', bgColor: '#FEF2F2' };
+    }
+};
+
+// Nouvelle fonction pour tous les statuts
+export const getVehicleStatusInfo = (statusKey: VehicleStatusKey): VehicleStatusInfo => {
+    const statusMap: Record<VehicleStatusKey, VehicleStatusInfo> = {
+        available: { color: '#10B981', text: 'Disponible', bgColor: '#ECFDF5' },
+        unavailable: { color: '#EF4444', text: 'Indisponible', bgColor: '#FEF2F2' },
+        maintenance: { color: '#F59E0B', text: 'En maintenance', bgColor: '#FFFBEB' },
+        reserved: { color: '#3B82F6', text: 'Réservé', bgColor: '#EFF6FF' },
+        out_of_service: { color: '#6B7280', text: 'Hors service', bgColor: '#F9FAFB' }
+    };
+    
+    return statusMap[statusKey];
+};
+
+// Fonction pour déterminer le statut d'un véhicule
+export const getVehicleStatus = (vehicle: CarProps): VehicleStatusKey => {
+    // Priorité : utiliser le statut explicite s'il existe
+    if (vehicle.status) {
+        return vehicle.status;
+    }
+    
+    // Sinon, déterminer le statut basé sur les propriétés
+    if (vehicle.out_of_service?.is_out_of_service) {
+        return 'out_of_service';
+    }
+    
+    if (vehicle.maintenance?.is_in_maintenance) {
+        return 'maintenance';
+    }
+    
+    if (vehicle.reservation?.is_reserved) {
+        return 'reserved';
+    }
+    
+    // Utiliser l'ancien système pour la compatibilité
+    if (vehicle.available) {
+        return 'available';
+    }
+    
+    return 'unavailable';
+};
+
+// Fonction pour obtenir le statut avec détails
+export const getVehicleStatusDetails = (vehicle: CarProps) => {
+    const status = getVehicleStatus(vehicle);
+    const statusInfo = getVehicleStatusInfo(status);
+    
+    let details = '';
+    
+    switch (status) {
+        case 'maintenance':
+            if (vehicle.maintenance?.scheduled_end) {
+                details = `Jusqu'au ${vehicle.maintenance.scheduled_end.toLocaleDateString()}`;
+            } else if (vehicle.maintenance?.maintenance_type) {
+                details = vehicle.maintenance.maintenance_type;
+            }
+            break;
+            
+        case 'reserved':
+            if (vehicle.reservation?.reservation_end) {
+                details = `Jusqu'au ${vehicle.reservation.reservation_end.toLocaleDateString()}`;
+            }
+            break;
+            
+        case 'out_of_service':
+            if (vehicle.out_of_service?.reason) {
+                details = vehicle.out_of_service.reason;
+            }
+            break;
+    }
+    
+    return {
+        ...statusInfo,
+        details
+    };
+};
+
+// Fonction pour vérifier si un véhicule est disponible pour une période
+export const isVehicleAvailableForPeriod = (
+    vehicle: CarProps, 
+    startDate: Date, 
+    endDate: Date
+): boolean => {
+    const status = getVehicleStatus(vehicle);
+    
+    // Si le véhicule n'est pas disponible de base
+    if (status !== 'available') {
+        return false;
+    }
+    
+    // Vérifier les dates bloquées
+    if (vehicle.availability?.blocked_dates) {
+        const hasBlockedDate = vehicle.availability.blocked_dates.some(blockedDate => 
+            blockedDate >= startDate && blockedDate <= endDate
+        );
+        if (hasBlockedDate) return false;
+    }
+    
+    // Vérifier l'indisponibilité saisonnière
+    if (vehicle.availability?.seasonal_unavailable) {
+        const hasSeasonalBlock = vehicle.availability.seasonal_unavailable.some(period =>
+            !(endDate < period.start_date || startDate > period.end_date)
+        );
+        if (hasSeasonalBlock) return false;
+    }
+    
+    return true;
+};
+
+// ===========================================
+// Exemples d'utilisation
+// ===========================================
+
+// Exemple 1: Véhicule en maintenance
+const vehicleInMaintenance: CarProps = {
+    id: 1,
+    available: false,
+    status: 'maintenance',
+    maintenance: {
+        is_in_maintenance: true,
+        maintenance_type: 'routine',
+        scheduled_end: new Date('2024-07-15'),
+        description: 'Révision générale'
+    },
+    // ... autres propriétés
+};
+
+// Exemple 2: Véhicule réservé
+const vehicleReserved: CarProps = {
+    id: 2,
+    available: false,
+    status: 'reserved',
+    reservation: {
+        is_reserved: true,
+        reserved_by: 123,
+        reservation_start: new Date('2024-07-10'),
+        reservation_end: new Date('2024-07-20'),
+        reservation_id: 'RES-001'
+    },
+    // ... autres propriétés
+};
+
+// Exemple 3: Véhicule hors service
+const vehicleOutOfService: CarProps = {
+    id: 3,
+    available: false,
+    status: 'out_of_service',
+    out_of_service: {
+        is_out_of_service: true,
+        reason: 'accident',
+        since: new Date('2024-07-01'),
+        estimated_return: new Date('2024-08-01')
+    },
+    // ... autres propriétés
+};

@@ -1,0 +1,280 @@
+[
+  {
+    "id": "CM001",
+    "first_name": "Jean-Paul",
+    "last_name": "Ngoa",
+    "age": 34,
+    "phone": "+237690123456",
+    "email": "jpn.goa@cm.cm",
+    "license_number": "CM-BA-2020-001",
+    "license_type": "B",
+    "address": "Carrefour Warda, Yaoundé",
+    "documents": {
+      "id_card": "CM-1989-0001",
+      "driver_licence": "PERM-001-2020"
+    },
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfqrkIdUI4Blaz-7rkt-0uJHj2egRPT8iUg&s",
+    "vehicle_assigned": [
+      {
+        "id": 1,
+        "brand": "Toyota",
+        "model": "RAV4",
+        "year": 2021
+      }
+    ],
+    "rating": 4,
+    "insurance_provider": "AXA Cameroun",
+    "insurance_policy": "POL-001-2023",
+    "available": true,
+    "created_at": "2023-01-15T08:00:00Z",
+    "status": "Active",
+    "status_updated_at": "2023-10-01T09:30:00Z",
+    "status_updated_by": "admin01",
+    "scheduling": {
+      "working_hours": {
+        "start": "08:00",
+        "end": "18:00"
+      },
+      "days_off": [
+        {"start": "2023-12-25", "end": "2023-12-26"}
+      ],
+      "scheduled_ranges": [
+        {"start": "2023-10-05T09:00", "end": "2023-10-05T12:00"}
+      ]
+    }
+  },
+  {
+    "id": "CM002",
+    "first_name": "Aïssatou",
+    "last_name": "Mvondo",
+    "age": 28,
+    "phone": "+237677890123",
+    "email": "aissamvondo@yahoo.cm",
+    "license_number": "CM-LT-2018-045",
+    "license_type": "D",
+    "address": "Bonapriso, Douala",
+    "documents": {
+      "id_card": "CM-1994-0456",
+      "driver_licence": "PERM-045-2018"
+    },
+    "photo": "https://example.com/photo2.jpg",
+    "vehicle_assigned": [
+      {
+        "id": 2,
+        "brand": "Hyundai",
+        "model": "Tucson",
+        "year": 2022
+      }
+    ],
+    "rating": 4.7,
+    "insurance_provider": "Allianz Cameroun",
+    "available": true,
+    "created_at": "2022-11-20T07:30:00Z",
+    "status": "Available",
+    "scheduling": {
+      "working_hours": {
+        "start": "07:30",
+        "end": "17:30"
+      },
+      "days_off": [],
+      "scheduled_ranges": [
+        {"start": "2023-10-05T08:00", "end": "2023-10-05T16:00"}
+      ]
+    }
+  },
+  {
+    "id": "CM003",
+    "first_name": "Mohamadou",
+    "last_name": "Ousmanou",
+    "age": 41,
+    "phone": "+237655432109",
+    "email": "mousmanou@gmail.com",
+    "license_number": "CM-EN-2015-112",
+    "license_type": "C",
+    "address": "Grande Rue, Garoua",
+    "documents": {
+      "id_card": "CM-1981-0789",
+      "driver_licence": "PERM-112-2015"
+    },
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJmAtd1SdsO8hkz_08dTMHbwFcuELaRYf8Q&s",
+    "vehicle_assigned": [
+      {
+        "id": 3,
+        "brand": "Nissan",
+        "model": "Navara",
+        "year": 2019
+      }
+    ],
+    "rating": 4.3,
+    "insurance_provider": "Sunu Assurances",
+    "available": false,
+    "created_at": "2021-05-10T10:15:00Z",
+    "status": "Out_of_Service",
+    "status_updated_at": "2023-09-28T14:20:00Z",
+    "scheduling": {
+      "working_hours": {
+        "start": "06:00",
+        "end": "16:00"
+      },
+      "days_off": [
+        {"start": "2023-11-01", "end": "2023-11-03"}
+      ],
+      "scheduled_ranges": []
+    }
+  },
+  {
+    "id": "CM004",
+    "first_name": "Patience",
+    "last_name": "Ndjock",
+    "age": 37,
+    "phone": "+237699887766",
+    "email": "patience.ndjock@hotmail.co.cm",
+    "license_number": "CM-SW-2019-087",
+    "license_type": "B",
+    "address": "Nkongsamba, Littoral",
+    "documents": {
+      "id_card": "CM-1985-0321",
+      "driver_licence": "PERM-087-2019"
+    },
+    "photo": "https://example.com/photo4.jpg",
+    "vehicle_assigned": [
+      {
+        "id": 4,
+        "brand": "Suzuki",
+        "model": "Vitara",
+        "year": 2021
+      }
+    ],
+    "rating": 4.8,
+    "available": true,
+    "created_at": "2023-03-01T09:00:00Z",
+    "status": "Emergency",
+    "scheduling": {
+      "working_hours": {
+        "start": "09:00",
+        "end": "21:00"
+      },
+      "days_off": [],
+      "scheduled_ranges": [
+        {"start": "2023-10-06T14:00", "end": "2023-10-06T18:00"}
+      ]
+    }
+  },
+  {
+    "id": "CM005",
+    "first_name": "Roger",
+    "last_name": "Njiako",
+    "age": 45,
+    "phone": "+237622334455",
+    "email": "rnjiako@camnet.cm",
+    "license_number": "CM-NW-2005-201",
+    "license_type": "E",
+    "address": "Bamenda Station, Nord-Ouest",
+    "documents": {
+      "id_card": "CM-1978-0456",
+      "driver_licence": "PERM-201-2005"
+    },
+    "photo": "https://example.com/photo5.jpg",
+    "vehicle_assigned": [
+      {
+        "id": 5,
+        "brand": "Ford",
+        "model": "Ranger",
+        "year": 2018
+      }
+    ],
+    "rating": 4.6,
+    "insurance_provider": "Activa Assurances",
+    "available": true,
+    "created_at": "2020-08-12T07:45:00Z",
+    "status": "Active",
+    "scheduling": {
+      "working_hours": {
+        "start": "07:00",
+        "end": "19:00"
+      },
+      "days_off": [
+        {"start": "2023-10-10", "end": "2023-10-12"}
+      ],
+      "scheduled_ranges": []
+    }
+  },
+  {
+    "id": "CM006",
+    "first_name": "Amina",
+    "last_name": "Aboubakar",
+    "age": 31,
+    "phone": "+237677554433",
+    "email": "amina.abk@live.cm",
+    "license_number": "CM-AD-2021-015",
+    "license_type": "B",
+    "address": "Bafoussam, Ouest",
+    "documents": {
+      "id_card": "CM-1991-0789",
+      "driver_licence": "PERM-015-2021"
+    },
+    "photo": "https://example.com/photo6.jpg",
+    "vehicle_assigned": [
+      {
+        "id": 6,
+        "brand": "Kia",
+        "model": "Seltos",
+        "year": 2023
+      }
+    ],
+    "rating": 4.9,
+    "available": false,
+    "created_at": "2023-02-14T11:30:00Z",
+    "status": "Available",
+    "scheduling": {
+      "working_hours": {
+        "start": "10:00",
+        "end": "20:00"
+      },
+      "days_off": [],
+      "scheduled_ranges": [
+        {"start": "2023-10-07T09:00", "end": "2023-10-07T17:00"}
+      ]
+    }
+  },
+  {
+    "id": "CM010",
+    "first_name": "Esther",
+    "last_name": "Nguepdjo",
+    "age": 26,
+    "phone": "+237690554477",
+    "email": "esther.npdj@etu.unicam.cm",
+    "license_number": "CM-OU-2023-010",
+    "license_type": "B",
+    "address": "Dschang, Ouest",
+    "documents": {
+      "id_card": "CM-1998-0456",
+      "driver_licence": "PERM-010-2023"
+    },
+    "photo": "https://example.com/photo10.jpg",
+    "vehicle_assigned": [
+      {
+        "id": 10,
+        "brand": "Kia",
+        "model": "Picanto",
+        "year": 2023
+      }
+    ],
+    "rating": 4.9,
+    "available": false,
+    "created_at": "2023-09-01T10:00:00Z",
+    "status": "Out_of_Service",
+    "status_updated_at": "2023-10-02T15:45:00Z",
+    "status_updated_by": "admin02",
+    "scheduling": {
+      "working_hours": {
+        "start": "09:00",
+        "end": "19:00"
+      },
+      "days_off": [
+        {"start": "2023-10-15", "end": "2023-10-17"}
+      ],
+      "scheduled_ranges": []
+    }
+  }
+]
