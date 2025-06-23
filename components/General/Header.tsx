@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Platform, StatusBa
 import { Ionicons, Feather, FontAwesome } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { Colors } from '@/utils/colors';
+import {Link} from "expo-router";
 
 type HeaderProps = {
     logo: string;
@@ -19,9 +20,11 @@ export default function HEADER({ logo }: HeaderProps) {
             <View style={styles.topBar}>
                 <Text style={styles.logo}>{logo}</Text>
                 <View style={styles.iconsContainer}>
+                    <Link href={'/notification/NotificationScreen/'} asChild>
                     <TouchableOpacity style={styles.iconButton}>
                         <Ionicons name="notifications-outline" size={24} color="#fff" />
                     </TouchableOpacity>
+                    </Link>
                     <TouchableOpacity>
                         <Feather name="menu" size={24} color="#fff" />
                     </TouchableOpacity>

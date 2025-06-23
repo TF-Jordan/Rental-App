@@ -7,11 +7,11 @@ import {
     TouchableOpacity,
     TextInput,
     Dimensions,
-    StatusBar,
+    StatusBar, ScrollView,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import {Stack, useRouter} from 'expo-router';
 import LocationCard from '@/components/location/new/LocationCard';
 import HEADER from '@/components/General/Header';
 import { LocationProps } from '@/utils/types/LocationProps';
@@ -123,11 +123,17 @@ const LocationsScreen: React.FC = () => {
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
             >
-                <StatusBar barStyle="light-content" backgroundColor="#066AFF" />
-
-
                 <View style={styles.titleContainer}>
-                    <Text style={styles.title}>Mes Locations</Text>
+                    <View style={{flexDirection:'row'}}>
+                        <TouchableOpacity
+                            style={styles.backButton}
+                            onPress={() => router.back()}
+                        >
+                            <Ionicons name="arrow-back" size={24} color="#FFFFFF" />
+                        </TouchableOpacity>
+                        <Text style={styles.title}>Mes Locations</Text>
+                    </View>
+
                     <Text style={styles.subtitle}>
                         {filteredLocations.length} location{filteredLocations.length > 1 ? 's' : ''}
                     </Text>
@@ -135,24 +141,36 @@ const LocationsScreen: React.FC = () => {
             </LinearGradient>
 
             {/* Filtres */}
-            <View style={styles.filtersContainer}>
-                <View style={styles.filtersScrollView}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}
+            style={styles.filtersContainer}>
                     {renderFilterChip('all', 'Toutes', 'list')}
                     {renderFilterChip('pending', 'En cours', 'time')}
                     {renderFilterChip('completed', 'Terminées', 'checkmark-circle')}
                     {renderFilterChip('cancelled', 'Annulées', 'close-circle')}
-                </View>
-            </View>
+            </ScrollView>
         </View>
     );
 
     return (
+        <>
+        <Stack.Screen
+            options={{
+                headerShown: true,      // Affiche jus// @ts-ignorete la barre avec bouton retour
+                headerTitle: '',         // Pas de titre
+                headerBackTitle: 'Back', // Texte personnalisé
+                headerTransparent: true, // Style optionnel
+            }}
+        />
+    <StatusBar barStyle="light-content" backgroundColor="#066AFF" />
+
+    <View>
+        {renderHeader()}
+    </View>
         <View style={styles.container}>
             <FlatList
                 data={filteredLocations}
                 renderItem={renderLocationCard}
                 keyExtractor={(item) => item.id.toString()}
-                ListHeaderComponent={renderHeader}
                 ListEmptyComponent={renderEmptyState}
                 contentContainerStyle={styles.listContainer}
                 showsVerticalScrollIndicator={false}
@@ -162,6 +180,7 @@ const LocationsScreen: React.FC = () => {
                 }}
             />
         </View>
+        </>
     );
 };
 
@@ -187,12 +206,22 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         marginTop: 16,
         marginBottom: 20,
+
+    },
+    backButton: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     title: {
         fontSize: 28,
         fontWeight: '800',
         color: '#FFFFFF',
         marginBottom: 4,
+        marginLeft:8
     },
     subtitle: {
         fontSize: 16,

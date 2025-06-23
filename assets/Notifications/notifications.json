@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Réservation confirmée",
+    "content": "Votre réservation pour le véhicule Toyota RAV4 a été confirmée.",
+    "category": "Réservation",
+    "created_at": "2025-06-23T08:15:00Z",
+    "read_status": "unread"
+  },
+  {
+    "id": 2,
+    "title": "Paiement reçu",
+    "content": "Nous avons reçu votre paiement pour la réservation #RZ342.",
+    "category": "Paiement",
+    "created_at": "2025-06-22T14:37:00Z",
+    "read_status": "read"
+  },
+  {
+    "id": 3,
+    "title": "Entretien du véhicule",
+    "content": "Le véhicule Renault Clio a été marqué comme en entretien.",
+    "category": "Maintenance",
+    "created_at": "2025-06-21T09:50:00Z",
+    "read_status": "unread"
+  },
+  {
+    "id": 4,
+    "title": "Nouveau message",
+    "content": "Vous avez reçu un nouveau message de l’agence PrestigeAuto.",
+    "category": "Messagerie",
+    "created_at": "2025-06-20T18:21:00Z",
+    "read_status": "read"
+  },
+  {
+    "id": 5,
+    "title": "Offre spéciale",
+    "content": "Profitez de 20% de réduction sur toutes les locations ce week-end !",
+    "category": "Promotion",
+    "created_at": "2025-06-19T12:00:00Z",
+    "read_status": "unread"
+  },
+  {
+    "id": 6,
+    "title": "Vérification des documents",
+    "content": "Certains documents manquent pour valider votre profil.",
+    "category": "Compte",
+    "created_at": "2025-06-18T16:45:00Z",
+    "read_status": "read"
+  },
+  {
+    "id": 7,
+    "title": "Prolongation de location",
+    "content": "Votre location du véhicule Peugeot 208 a été prolongée de 2 jours.",
+    "category": "Location",
+    "created_at": "2025-06-17T10:30:00Z",
+    "read_status": "unread"
+  },
+  {
+    "id": 8,
+    "title": "Nouveau véhicule disponible",
+    "content": "Une nouvelle Tesla Model 3 est disponible à Douala.",
+    "category": "Nouveauté",
+    "created_at": "2025-06-16T09:00:00Z",
+    "read_status": "read"
+  },
+  {
+    "id": 9,
+    "title": "Problème signalé",
+    "content": "Un problème technique a été signalé sur le véhicule Hyundai i10.",
+    "category": "Support",
+    "created_at": "2025-06-15T11:05:00Z",
+    "read_status": "unread"
+  },
+  {
+    "id": 10,
+    "title": "Compte mis à jour",
+    "content": "Vos informations personnelles ont été mises à jour avec succès.",
+    "category": "Compte",
+    "created_at": "2025-06-14T13:20:00Z",
+    "read_status": "read"
+  }
+]

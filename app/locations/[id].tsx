@@ -101,7 +101,7 @@ const LocationDetailsScreen: React.FC = () => {
             >
                 {isActive ? (
                     <LinearGradient
-                        colors={['#066AFF', '#0CB4FF']}
+                        colors={['#ff6506', '#ed8a55']}
                         style={styles.tabButtonGradient}
                         start={{ x: 0, y: 0 }}
                         end={{ x: 1, y: 0 }}
@@ -507,6 +507,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 12,
+        width:width,
     },
     tabButtonContent: {
         flexDirection: 'row',
