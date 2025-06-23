@@ -7,20 +7,24 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 export default function TabLayout(){
     return(
         <Tabs screenOptions={{headerShown:false}}>
+
+
+            <Tabs.Screen
+                name='Vehicles'
+                options={{
+                    title:"Véhicles",
+                    tabBarIcon: ({ color, size }) => (
+                        <FontAwesome5 name="car-alt" size={24} color={color} />
+                    ),
+                }}/>
+
             <Tabs.Screen
                 name='Dashboard'
                 options={{
                     title:'Dashboard',
                     tabBarIcon:({color,size})=>(<MaterialIcons name="dashboard" size={size} color={color} />),
                 }}/>
-            <Tabs.Screen
-                name='Véhicles'
-                options={{
-                    title:"Véhicles",
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="car-outline" size={size} color={color} />
-                    ),
-                }}/>
+
 
             <Tabs.Screen
                 name='Conducteurs'
@@ -32,13 +36,24 @@ export default function TabLayout(){
                 }}/>
 
             <Tabs.Screen
-                name='Car'
+                name='Agencies'
                 options={{
-                    title:"Vehicles",
+                    title:"Agences",
                     tabBarIcon: ({ color, size }) => (
-                        <FontAwesome5 name="car-alt" size={24} color={color} />
+                        <MaterialIcons name="garage" size={size} color={color}/>
                     ),
                 }}/>
+            <Tabs.Screen
+                name="Menu"
+                options={{
+                    title:"Menu",
+                    tabBarIcon: ({ color }) => (
+                        <Ionicons name="grid-outline" size={24} color={color} />
+                    ),
+                }}
+            />
         </Tabs>
     )
 }
+
+

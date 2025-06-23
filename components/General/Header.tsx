@@ -10,6 +10,7 @@ type HeaderProps = {
 };
 
 export default function HEADER({ logo }: HeaderProps) {
+    // @ts-ignore
     return (
         <LinearGradient
             colors={[Colors.primary, Colors.secondary]}
@@ -20,7 +21,7 @@ export default function HEADER({ logo }: HeaderProps) {
             <View style={styles.topBar}>
                 <Text style={styles.logo}>{logo}</Text>
                 <View style={styles.iconsContainer}>
-                    <Link href={'/notification/NotificationScreen/'} asChild>
+                    <Link href={`/notification/NotificationScreen/`} asChild>
                     <TouchableOpacity style={styles.iconButton}>
                         <Ionicons name="notifications-outline" size={24} color="#fff" />
                     </TouchableOpacity>

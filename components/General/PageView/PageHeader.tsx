@@ -19,9 +19,10 @@ interface PageHeaderProps {
     animatedStyle?: any;
     title?: string;
     subtitle?: string;
+    header?: boolean;
 }
 
-export default function PageHeader({logo = 'EASY-RENT', tabs, activeTab, onTabChange, title, subtitle, animatedStyle}: PageHeaderProps) {
+export default function PageHeader({header=true,logo = 'EASY-RENT', tabs, activeTab, onTabChange, title, subtitle, animatedStyle}: PageHeaderProps) {
 
     // @ts-ignore
     return (
@@ -29,7 +30,7 @@ export default function PageHeader({logo = 'EASY-RENT', tabs, activeTab, onTabCh
             colors={['#ffffff', '#ffffff']}
             style={styles.headerSection}
         >
-            <HEADER logo={logo} />
+            {header && <HEADER logo={logo} />}
             <Text style={styles.title}>{title}</Text>
             {tabs && tabs.length >= 2 && (
                 <TabSelector

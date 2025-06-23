@@ -5,6 +5,7 @@ import { View, Text, StyleSheet, ScrollView, TextInput, TouchableOpacity } from 
 import { Ionicons } from '@expo/vector-icons';
 import StaffTable from './StaffTable';
 import FilterDropdown from './FilterDropdown';
+import AddPersonnalModal from "@/components/statf/AddForm/AddPersonalModal";
 
 const GeneralView = () => {
   // États pour les filtres - maintenant des valeurs uniques au lieu de tableaux
@@ -23,6 +24,7 @@ const GeneralView = () => {
 
   // @ts-ignore
   return (
+      <>
       <ScrollView style={styles.container}>
         {/* Section Liste du Personnel */}
         <View style={styles.headerSection}>
@@ -142,6 +144,8 @@ const GeneralView = () => {
             selectedStatus={selectedStatus}
         />
       </ScrollView>
+
+      </>
   );
 };
 
