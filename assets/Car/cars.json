@@ -1,0 +1,1188 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "type": "SUV",
+      "brand": "Toyota",
+      "model": "RAV4",
+      "year": 2020,
+      "rating": 4.5,
+      "passenger": 5,
+      "description": "SUV Toyota RAV4 confortable et fiable, parfait pour les routes de Douala et les déplacements inter-urbains. Véhicule bien entretenu avec climatisation efficace.",
+      "pricePerDay": 35000,
+      "vin": "2T3BFREV6LW123456",
+      "documents": {
+        "registration_certificate": "RC_TOY_RAV4_2020_001.pdf",
+        "technical_inspection": "TI_TOY_RAV4_001_2024.pdf",
+        "insurance": "INS_ACTIVA_TOY_001.pdf",
+        "tax_sticker": ["TAX_2024_TOY_001.jpg", "TAX_2023_TOY_001.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": true,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": false,
+        "bluetooth": true,
+        "sleeping_bed": false,
+        "onboard_computer": true,
+        "gps": true,
+        "luggage": true,
+        "water": false,
+        "additional_covers": true
+      },
+      "engine": {
+        "type": "Essence",
+        "horsepower": 203,
+        "capacity": 2500
+      },
+      "transmission": "Automatique",
+      "color": "Blanc",
+      "fuel_efficiency": {
+        "city": "8.5L/100km",
+        "highway": "6.8L/100km"
+      },
+      "license_plate": "LT-2345-DLA",
+      "registration": {
+        "state": "Littoral",
+        "expiry": "2025-03-15T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Jean-Paul Mballa",
+        "address": "Akwa, Douala",
+        "phone": "+237 677 123 456",
+        "email": "jp.mballa@gmail.com"
+      },
+      "service_history": [
+        {
+          "date": "2024-01-15T00:00:00.000Z",
+          "service_type": "Révision complète",
+          "mileage": 45000,
+          "provider": "Toyota Cameroun - Douala"
+        },
+        {
+          "date": "2023-07-20T00:00:00.000Z",
+          "service_type": "Changement d'huile",
+          "mileage": 38000,
+          "provider": "Garage Central Bonanjo"
+        }
+      ],
+      "insurance": {
+        "provider": "Activa Assurance",
+        "policy_number": "ACT-CM-2024-001234",
+        "expiry": "2025-01-30T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 1
+      },
+      "images": [
+        "https://carsguide-res.cloudinary.com/image/upload/c_fit,h_672,w_1191,f_auto,t_cg_base/v1/editorial/segment_review%2Fhero_image%2Ftoyota-rav4-my22-cruiser-hybrid-tw-grey-1001x565-%281%29_0.jpg",
+        "https://i.gaw.to/vehicles/photos/40/22/402209-2020-toyota-rav4.jpg?640x400",
+        "https://i0.wp.com/practicalmotoring.com.au/wp-content/uploads/2019/11/P1080584.jpg?resize=768%2C432&ssl=1"
+
+
+         ],
+      "reviews": [
+        {
+          "id": 1,
+          "reviewer_name": "Marie Nguema",
+          "reviewer_id": 101,
+          "comment": "Excellente voiture pour mes déplacements à Douala. Très confortable !",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "reviewer_name": "Paul Eto'o",
+          "reviewer_id": 102,
+          "comment": "Bon véhicule, climatisation efficace malgré la chaleur de Douala.",
+          "rating": 4
+        }
+      ],
+      "likes": [
+        {
+          "id": 1,
+          "userId": 101,
+          "userName": "Marie Nguema",
+          "createdAt": "2024-06-15T10:30:00.000Z"
+        },
+        {
+          "id": 2,
+          "userId": 102,
+          "userName": "Paul Eto'o",
+          "createdAt": "2024-06-16T14:20:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "userId": 101,
+          "userName": "Marie Nguema",
+          "userAvatar": "avatar_marie.jpg",
+          "comment": "Ce véhicule est parfait pour les embouteillages de Douala !",
+          "createdAt": "2024-06-15T10:35:00.000Z",
+          "replies": []
+        }
+      ],
+      "shares": [
+        {
+          "id": 1,
+          "userId": 101,
+          "userName": "Marie Nguema",
+          "platform": "whatsapp",
+          "createdAt": "2024-06-15T11:00:00.000Z"
+        }
+      ],
+      "totalLikes": 2,
+      "totalComments": 1,
+      "totalShares": 1,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": false,
+      "available": true
+    },
+    {
+      "id": 2,
+      "type": "Berline",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2019,
+      "rating": 4.2,
+      "passenger": 5,
+      "description": "Honda Civic berline élégante et économique, idéale pour les déplacements urbains à Yaoundé et Douala. Consommation réduite et conduite agréable.",
+      "pricePerDay": 28000,
+      "vin": "19XFC2F59KE123789",
+      "documents": {
+        "registration_certificate": "RC_HON_CIV_2019_002.pdf",
+        "technical_inspection": "TI_HON_CIV_002_2024.pdf",
+        "insurance": "INS_SAHAM_HON_002.pdf",
+        "tax_sticker": ["TAX_2024_HON_002.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": true,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": true,
+        "bluetooth": true,
+        "sleeping_bed": false,
+        "onboard_computer": false,
+        "gps": false,
+        "luggage": true,
+        "water": false,
+        "additional_covers": false
+      },
+      "engine": {
+        "type": "Essence",
+        "horsepower": 158,
+        "capacity": 1500
+      },
+      "transmission": "Manuelle",
+      "color": "Gris métallisé",
+      "fuel_efficiency": {
+        "city": "7.2L/100km",
+        "highway": "5.8L/100km"
+      },
+      "license_plate": "CE-1567-YDE",
+      "registration": {
+        "state": "Centre",
+        "expiry": "2025-08-20T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Aminata Bella",
+        "address": "Bastos, Yaoundé",
+        "phone": "+237 699 234 567",
+        "email": "a.bella@yahoo.fr"
+      },
+      "service_history": [
+        {
+          "date": "2024-02-10T00:00:00.000Z",
+          "service_type": "Entretien périodique",
+          "mileage": 52000,
+          "provider": "Honda Yaoundé"
+        }
+      ],
+      "insurance": {
+        "provider": "Saham Assurance",
+        "policy_number": "SAH-CM-2024-002345",
+        "expiry": "2024-12-15T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 2
+      },
+      "images": [],
+      "reviews": [
+        {
+          "id": 3,
+          "reviewer_name": "Ibrahim Sokoto",
+          "reviewer_id": 103,
+          "comment": "Voiture économique, parfaite pour mes trajets quotidiens.",
+          "rating": 4
+        }
+      ],
+      "likes": [
+        {
+          "id": 3,
+          "userId": 103,
+          "userName": "Ibrahim Sokoto",
+          "createdAt": "2024-06-17T09:15:00.000Z"
+        }
+      ],
+      "comments": [],
+      "shares": [],
+      "totalLikes": 1,
+      "totalComments": 0,
+      "totalShares": 0,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": true,
+      "available": true
+    },
+    {
+      "id": 3,
+      "type": "Pick-up",
+      "brand": "Ford",
+      "model": "Ranger",
+      "year": 2021,
+      "rating": 4.7,
+      "passenger": 5,
+      "description": "Pick-up Ford Ranger robuste et puissant, parfait pour les trajets vers l'intérieur du pays et le transport de marchandises. Excellent pour les routes difficiles.",
+      "pricePerDay": 42000,
+      "vin": "1FTER4EH5MLA67890",
+      "documents": {
+        "registration_certificate": "RC_FOR_RAN_2021_003.pdf",
+        "technical_inspection": "TI_FOR_RAN_003_2024.pdf",
+        "insurance": "INS_ALLIANZ_FOR_003.pdf",
+        "tax_sticker": ["TAX_2024_FOR_003.jpg", "TAX_2023_FOR_003.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": true,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": false,
+        "bluetooth": true,
+        "sleeping_bed": false,
+        "onboard_computer": true,
+        "gps": true,
+        "luggage": true,
+        "water": true,
+        "additional_covers": true
+      },
+      "engine": {
+        "type": "Diesel",
+        "horsepower": 200,
+        "capacity": 3200
+      },
+      "transmission": "Automatique",
+      "color": "Bleu foncé",
+      "fuel_efficiency": {
+        "city": "9.5L/100km",
+        "highway": "7.8L/100km"
+      },
+      "license_plate": "OU-3456-BMD",
+      "registration": {
+        "state": "Ouest",
+        "expiry": "2025-11-30T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "François Tchoumi",
+        "address": "Bafoussam",
+        "phone": "+237 678 345 678",
+        "email": "f.tchoumi@hotmail.com"
+      },
+      "service_history": [
+        {
+          "date": "2024-03-05T00:00:00.000Z",
+          "service_type": "Révision majeure",
+          "mileage": 35000,
+          "provider": "Ford Bafoussam"
+        },
+        {
+          "date": "2023-09-12T00:00:00.000Z",
+          "service_type": "Changement de freins",
+          "mileage": 28000,
+          "provider": "Garage Moderne Bafoussam"
+        }
+      ],
+      "insurance": {
+        "provider": "Allianz Cameroun",
+        "policy_number": "ALL-CM-2024-003456",
+        "expiry": "2025-05-20T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 3
+      },
+      "images": [
+        "https://img-ik.cars.co.za/news-site-za/images/2021/05/Ford-Ranger-XLSport-1.jpg?tr=h-347,w-617,q-80",
+
+      ],
+      "reviews": [
+        {
+          "id": 4,
+          "reviewer_name": "Sylvain Kamdem",
+          "reviewer_id": 104,
+          "comment": "Excellent pour mes livraisons vers Kribi et Limbé !",
+          "rating": 5
+        },
+        {
+          "id": 5,
+          "reviewer_name": "Grace Mbong",
+          "reviewer_id": 105,
+          "comment": "Très robuste, parfait pour les routes en terre.",
+          "rating": 4
+        }
+      ],
+      "likes": [
+        {
+          "id": 4,
+          "userId": 104,
+          "userName": "Sylvain Kamdem",
+          "createdAt": "2024-06-18T16:45:00.000Z"
+        },
+        {
+          "id": 5,
+          "userId": 105,
+          "userName": "Grace Mbong",
+          "createdAt": "2024-06-19T08:30:00.000Z"
+        },
+        {
+          "id": 6,
+          "userId": 106,
+          "userName": "Alain Nkomo",
+          "createdAt": "2024-06-20T12:15:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": 2,
+          "userId": 104,
+          "userName": "Sylvain Kamdem",
+          "userAvatar": "avatar_sylvain.jpg",
+          "comment": "J'ai utilisé ce pick-up pour aller à Kribi, excellent sur toutes les routes !",
+          "createdAt": "2024-06-18T17:00:00.000Z",
+          "replies": [
+            {
+              "id": 3,
+              "userId": 105,
+              "userName": "Grace Mbong",
+              "userAvatar": "avatar_grace.jpg",
+              "comment": "Je confirme, très fiable même sur les pistes difficiles.",
+              "createdAt": "2024-06-19T08:45:00.000Z"
+            }
+          ]
+        }
+      ],
+      "shares": [
+        {
+          "id": 2,
+          "userId": 104,
+          "userName": "Sylvain Kamdem",
+          "platform": "facebook",
+          "createdAt": "2024-06-18T17:30:00.000Z"
+        }
+      ],
+      "totalLikes": 3,
+      "totalComments": 2,
+      "totalShares": 1,
+      "isLikedByCurrentUser": true,
+      "currentUserId": 200,
+      "favorite": false,
+      "available": true
+    },
+    {
+      "id": 4,
+      "type": "Minivan",
+      "brand": "Nissan",
+      "model": "Serena",
+      "year": 2018,
+      "rating": 4.0,
+      "passenger": 8,
+      "description": "Minivan Nissan Serena spacieux, idéal pour les familles nombreuses et les groupes. Parfait pour les voyages et les événements familiaux au Cameroun.",
+      "pricePerDay": 32000,
+      "vin": "JN8AF5MV8JT123456",
+      "documents": {
+        "registration_certificate": "RC_NIS_SER_2018_004.pdf",
+        "technical_inspection": "TI_NIS_SER_004_2024.pdf",
+        "insurance": "INS_NSIA_NIS_004.pdf",
+        "tax_sticker": ["TAX_2024_NIS_004.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": false,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": true,
+        "bluetooth": false,
+        "sleeping_bed": false,
+        "onboard_computer": false,
+        "gps": false,
+        "luggage": true,
+        "water": false,
+        "additional_covers": false
+      },
+      "engine": {
+        "type": "Essence",
+        "horsepower": 150,
+        "capacity": 2000
+      },
+      "transmission": "Automatique",
+      "color": "Argent",
+      "fuel_efficiency": {
+        "city": "9.8L/100km",
+        "highway": "7.5L/100km"
+      },
+      "license_plate": "LT-4567-DLA",
+      "registration": {
+        "state": "Littoral",
+        "expiry": "2025-04-10T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Célestine Onana",
+        "address": "New Bell, Douala",
+        "phone": "+237 655 456 789",
+        "email": "c.onana@gmail.com"
+      },
+      "service_history": [
+        {
+          "date": "2024-01-25T00:00:00.000Z",
+          "service_type": "Entretien général",
+          "mileage": 78000,
+          "provider": "Nissan Douala"
+        }
+      ],
+      "insurance": {
+        "provider": "NSIA Assurance",
+        "policy_number": "NSIA-CM-2024-004567",
+        "expiry": "2024-10-30T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 1
+      },
+      "images": [
+        "https://paultan.org/image/2024/07/2024_GIIAS_Nissan_Serena-1-630x420.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 6,
+          "reviewer_name": "Joseph Mbida",
+          "reviewer_id": 106,
+          "comment": "Parfait pour les sorties en famille, très spacieux.",
+          "rating": 4
+        }
+      ],
+      "likes": [],
+      "comments": [],
+      "shares": [],
+      "totalLikes": 0,
+      "totalComments": 0,
+      "totalShares": 0,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": false,
+      "available": false
+    },
+    {
+      "id": 5,
+      "type": "Berline",
+      "brand": "Hyundai",
+      "model": "Elantra",
+      "year": 2022,
+      "rating": 4.3,
+      "passenger": 5,
+      "description": "Hyundai Elantra récente et moderne, équipée des dernières technologies. Confort optimal pour les déplacements d'affaires et personnels.",
+      "pricePerDay": 30000,
+      "vin": "KMHL14JA6NA123456",
+      "documents": {
+        "registration_certificate": "RC_HYU_ELA_2022_005.pdf",
+        "technical_inspection": "TI_HYU_ELA_005_2024.pdf",
+        "insurance": "INS_ACTIVA_HYU_005.pdf",
+        "tax_sticker": ["TAX_2024_HYU_005.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": true,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": false,
+        "bluetooth": true,
+        "sleeping_bed": false,
+        "onboard_computer": true,
+        "gps": true,
+        "luggage": true,
+        "water": false,
+        "additional_covers": true
+      },
+      "engine": {
+        "type": "Essence",
+        "horsepower": 147,
+        "capacity": 2000
+      },
+      "transmission": "Automatique",
+      "color": "Rouge",
+      "fuel_efficiency": {
+        "city": "7.8L/100km",
+        "highway": "6.2L/100km"
+      },
+      "license_plate": "CE-5678-YDE",
+      "registration": {
+        "state": "Centre",
+        "expiry": "2025-12-31T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Dr. Emmanuel Nkou",
+        "address": "Mvan, Yaoundé",
+        "phone": "+237 677 567 890",
+        "email": "e.nkou@doctor.cm"
+      },
+      "service_history": [
+        {
+          "date": "2024-04-15T00:00:00.000Z",
+          "service_type": "Première révision",
+          "mileage": 15000,
+          "provider": "Hyundai Yaoundé"
+        }
+      ],
+      "insurance": {
+        "provider": "Activa Assurance",
+        "policy_number": "ACT-CM-2024-005678",
+        "expiry": "2025-06-15T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 2
+      },
+      "images": [
+        "hyundai_elantra_front.jpg",
+        "hyundai_elantra_side.jpg",
+        "hyundai_elantra_interior.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 7,
+          "reviewer_name": "Claudette Fouda",
+          "reviewer_id": 107,
+          "comment": "Voiture très moderne et confortable, je recommande !",
+          "rating": 5
+        }
+      ],
+      "likes": [
+        {
+          "id": 7,
+          "userId": 107,
+          "userName": "Claudette Fouda",
+          "createdAt": "2024-06-21T14:20:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": 4,
+          "userId": 107,
+          "userName": "Claudette Fouda",
+          "userAvatar": "avatar_claudette.jpg",
+          "comment": "J'adore cette voiture, très silencieuse et économique !",
+          "createdAt": "2024-06-21T14:25:00.000Z",
+          "replies": []
+        }
+      ],
+      "shares": [],
+      "totalLikes": 1,
+      "totalComments": 1,
+      "totalShares": 0,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": true,
+      "available": true
+    },
+    {
+      "id": 6,
+      "type": "SUV",
+      "brand": "Kia",
+      "model": "Sorento",
+      "year": 2020,
+      "rating": 4.4,
+      "passenger": 7,
+      "description": "SUV Kia Sorento 7 places, parfait pour les grandes familles et les voyages. Robuste et fiable pour tous types de routes camerounaises.",
+      "pricePerDay": 38000,
+      "vin": "5XYPG4A59LG123456",
+      "documents": {
+        "registration_certificate": "RC_KIA_SOR_2020_006.pdf",
+        "technical_inspection": "TI_KIA_SOR_006_2024.pdf",
+        "insurance": "INS_SAHAM_KIA_006.pdf",
+        "tax_sticker": ["TAX_2024_KIA_006.jpg", "TAX_2023_KIA_006.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": true,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": true,
+        "bluetooth": true,
+        "sleeping_bed": false,
+        "onboard_computer": true,
+        "gps": false,
+        "luggage": true,
+        "water": false,
+        "additional_covers": true
+      },
+      "engine": {
+        "type": "Essence",
+        "horsepower": 185,
+        "capacity": 2400
+      },
+      "transmission": "Automatique",
+      "color": "Noir",
+      "fuel_efficiency": {
+        "city": "9.2L/100km",
+        "highway": "7.1L/100km"
+      },
+      "license_plate": "AD-6789-NGD",
+      "registration": {
+        "state": "Adamaoua",
+        "expiry": "2025-07-25T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Aliou Baldé",
+        "address": "Ngaoundéré",
+        "phone": "+237 698 678 901",
+        "email": "a.balde@yahoo.com"
+      },
+      "service_history": [
+        {
+          "date": "2024-02-28T00:00:00.000Z",
+          "service_type": "Révision complète",
+          "mileage": 41000,
+          "provider": "Garage Central Ngaoundéré"
+        }
+      ],
+      "insurance": {
+        "provider": "Saham Assurance",
+        "policy_number": "SAH-CM-2024-006789",
+        "expiry": "2025-02-28T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 4
+      },
+      "images": [
+        "kia_sorento_front.jpg",
+        "kia_sorento_interior.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 8,
+          "reviewer_name": "Fatima Moussa",
+          "reviewer_id": 108,
+          "comment": "Excellent pour les voyages avec toute la famille.",
+          "rating": 4
+        }
+      ],
+      "likes": [
+        {
+          "id": 8,
+          "userId": 108,
+          "userName": "Fatima Moussa",
+          "createdAt": "2024-06-20T11:30:00.000Z"
+        }
+      ],
+      "comments": [],
+      "shares": [],
+      "totalLikes": 1,
+      "totalComments": 0,
+      "totalShares": 0,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": false,
+      "available": true
+    },
+    {
+      "id": 7,
+      "type": "Compacte",
+      "brand": "Volkswagen",
+      "model": "Polo",
+      "year": 2019,
+      "rating": 4.1,
+      "passenger": 5,
+      "description": "Volkswagen Polo compacte et maniable, idéale pour la circulation urbaine dense de Douala et Yaoundé. Économique et facile à garer.",
+      "pricePerDay": 25000,
+      "vin": "WVWZZZ6RZKA123456",
+      "documents": {
+        "registration_certificate": "RC_VW_POL_2019_007.pdf",
+        "technical_inspection": "TI_VW_POL_007_2024.pdf",
+        "insurance": "INS_ALLIANZ_VW_007.pdf",
+        "tax_sticker": ["TAX_2024_VW_007.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": false,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": false,
+        "bluetooth": false,
+        "sleeping_bed": false,
+        "onboard_computer": false,
+        "gps": false,
+        "luggage": false,
+        "water": false,
+        "additional_covers": false
+      },
+      "engine": {
+        "type": "Essence",
+        "horsepower": 95,
+        "capacity": 1200
+      },
+      "transmission": "Manuelle",
+      "color": "Bleu clair",
+      "fuel_efficiency": {
+        "city": "6.5L/100km",
+        "highway": "4.8L/100km"
+      },
+      "license_plate": "LT-7890-DLA",
+      "registration": {
+        "state": "Littoral",
+        "expiry": "2025-09-15T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Sandra Njike",
+        "address": "Bépanda, Douala",
+        "phone": "+237 656 789 012",
+        "email": "s.njike@outlook.com"
+      },
+      "service_history": [
+        {
+          "date": "2024-03-20T00:00:00.000Z",
+          "service_type": "Entretien courant",
+          "mileage": 65000,
+          "provider": "Garage Volkswagen Douala"
+        }
+      ],
+      "insurance": {
+        "provider": "Allianz Cameroun",
+        "policy_number": "ALL-CM-2024-007890",
+        "expiry": "2024-11-20T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 1
+      },
+      "images": [
+        "vw_polo_front.jpg",
+        "vw_polo_interior.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 9,
+          "reviewer_name": "Kevin Muna",
+          "reviewer_id": 109,
+          "comment": "Petite mais très pratique pour Douala.",
+          "rating": 4
+        }
+      ],
+      "likes": [],
+      "comments": [],
+      "shares": [],
+      "totalLikes": 0,
+      "totalComments": 0,
+      "totalShares": 0,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": false,
+      "available": true
+    },
+    {
+      "id": 8,
+      "type": "SUV",
+      "brand": "Mitsubishi",
+      "model": "Pajero",
+      "year": 2017,
+      "rating": 4.6,
+      "passenger": 7,
+      "description": "Mitsubishi Pajero robuste et tout-terrain, parfait pour les expéditions vers l'Extrême-Nord et les zones difficiles d'accès. Véhicule de confiance pour l'aventure.",
+      "pricePerDay": 45000,
+      "vin": "JA4MT41R5HJ123456",
+      "documents": {
+        "registration_certificate": "RC_MIT_PAJ_2017_008.pdf",
+        "technical_inspection": "TI_MIT_PAJ_008_2024.pdf",
+        "insurance": "INS_NSIA_MIT_008.pdf",
+        "tax_sticker": ["TAX_2024_MIT_008.jpg", "TAX_2023_MIT_008.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": false,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": false,
+        "bluetooth": false,
+        "sleeping_bed": false,
+        "onboard_computer": false,
+        "gps": false,
+        "luggage": true,
+        "water": true,
+        "additional_covers": true
+      },
+      "engine": {
+        "type": "Diesel",
+        "horsepower": 190,
+        "capacity": 3200
+      },
+      "transmission": "Manuelle",
+      "color": "Blanc",
+      "fuel_efficiency": {
+        "city": "11.5L/100km",
+        "highway": "8.9L/100km"
+      },
+      "license_plate": "EN-8901-MRU",
+      "registration": {
+        "state": "Extrême-Nord",
+        "expiry": "2025-05-10T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Ahmadou Bakari",
+        "address": "Maroua",
+        "phone": "+237 699 890 123",
+        "email": "a.bakari@gmail.com"
+      },
+      "service_history": [
+        {
+          "date": "2024-01-08T00:00:00.000Z",
+          "service_type": "Révision 4x4",
+          "mileage": 95000,
+          "provider": "Garage Tout-Terrain Maroua"
+        },
+        {
+          "date": "2023-06-15T00:00:00.000Z",
+          "service_type": "Changement de transmission",
+          "mileage": 87000,
+          "provider": "Mitsubishi Garoua"
+        }
+      ],
+      "insurance": {
+        "provider": "NSIA Assurance",
+        "policy_number": "NSIA-CM-2024-008901",
+        "expiry": "2025-01-08T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 5
+      },
+      "images": [
+        "mitsubishi_pajero_front.jpg",
+        "mitsubishi_pajero_4x4.jpg",
+        "mitsubishi_pajero_interior.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 10,
+          "reviewer_name": "Colonel Amadou",
+          "reviewer_id": 110,
+          "comment": "Excellent pour les missions dans le Grand Nord, très fiable.",
+          "rating": 5
+        },
+        {
+          "id": 11,
+          "reviewer_name": "Haoua Issa",
+          "reviewer_id": 111,
+          "comment": "Parfait pour nos safaris au parc de Waza.",
+          "rating": 4
+        }
+      ],
+      "likes": [
+        {
+          "id": 9,
+          "userId": 110,
+          "userName": "Colonel Amadou",
+          "createdAt": "2024-06-19T15:45:00.000Z"
+        },
+        {
+          "id": 10,
+          "userId": 111,
+          "userName": "Haoua Issa",
+          "createdAt": "2024-06-20T09:20:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": 5,
+          "userId": 110,
+          "userName": "Colonel Amadou",
+          "userAvatar": "avatar_amadou.jpg",
+          "comment": "Ce Pajero m'a accompagné jusqu'à la frontière tchadienne sans problème !",
+          "createdAt": "2024-06-19T16:00:00.000Z",
+          "replies": []
+        }
+      ],
+      "shares": [
+        {
+          "id": 3,
+          "userId": 110,
+          "userName": "Colonel Amadou",
+          "platform": "whatsapp",
+          "createdAt": "2024-06-19T16:30:00.000Z"
+        }
+      ],
+      "totalLikes": 2,
+      "totalComments": 1,
+      "totalShares": 1,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": false,
+      "available": true
+    },
+    {
+      "id": 9,
+      "type": "Berline",
+      "brand": "Peugeot",
+      "model": "508",
+      "year": 2021,
+      "rating": 4.2,
+      "passenger": 5,
+      "description": "Peugeot 508 élégante et raffinée, parfaite pour les déplacements d'affaires et les occasions spéciales. Design français et confort premium.",
+      "pricePerDay": 33000,
+      "vin": "VF3LCRHJXMS123456",
+      "documents": {
+        "registration_certificate": "RC_PEU_508_2021_009.pdf",
+        "technical_inspection": "TI_PEU_508_009_2024.pdf",
+        "insurance": "INS_ACTIVA_PEU_009.pdf",
+        "tax_sticker": ["TAX_2024_PEU_009.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": true,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": false,
+        "bluetooth": true,
+        "sleeping_bed": false,
+        "onboard_computer": true,
+        "gps": true,
+        "luggage": true,
+        "water": false,
+        "additional_covers": true
+      },
+      "engine": {
+        "type": "Essence",
+        "horsepower": 165,
+        "capacity": 1600
+      },
+      "transmission": "Automatique",
+      "color": "Gris anthracite",
+      "fuel_efficiency": {
+        "city": "7.9L/100km",
+        "highway": "6.1L/100km"
+      },
+      "license_plate": "CE-9012-YDE",
+      "registration": {
+        "state": "Centre",
+        "expiry": "2025-10-20T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Maître Sylvie Atangana",
+        "address": "Nlongkak, Yaoundé",
+        "phone": "+237 677 901 234",
+        "email": "s.atangana@avocat.cm"
+      },
+      "service_history": [
+        {
+          "date": "2024-04-05T00:00:00.000Z",
+          "service_type": "Entretien premium",
+          "mileage": 22000,
+          "provider": "Peugeot Yaoundé"
+        }
+      ],
+      "insurance": {
+        "provider": "Activa Assurance",
+        "policy_number": "ACT-CM-2024-009012",
+        "expiry": "2025-04-05T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 2
+      },
+      "images": [
+        "peugeot_508_front.jpg",
+        "peugeot_508_interior.jpg",
+        "peugeot_508_profile.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 12,
+          "reviewer_name": "Roger Essomba",
+          "reviewer_id": 112,
+          "comment": "Très classe pour mes rendez-vous d'affaires.",
+          "rating": 4
+        }
+      ],
+      "likes": [
+        {
+          "id": 11,
+          "userId": 112,
+          "userName": "Roger Essomba",
+          "createdAt": "2024-06-21T13:10:00.000Z"
+        }
+      ],
+      "comments": [],
+      "shares": [],
+      "totalLikes": 1,
+      "totalComments": 0,
+      "totalShares": 0,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": false,
+      "available": true
+    },
+    {
+      "id": 10,
+      "type": "Minibus",
+      "brand": "Toyota",
+      "model": "HiAce",
+      "year": 2020,
+      "rating": 4.8,
+      "passenger": 14,
+      "description": "Toyota HiAce minibus 14 places, idéal pour le transport de groupes, les voyages scolaires et les événements. Véhicule robuste et spacieux.",
+      "pricePerDay": 50000,
+      "vin": "JTFHV52E504123456",
+      "documents": {
+        "registration_certificate": "RC_TOY_HIA_2020_010.pdf",
+        "technical_inspection": "TI_TOY_HIA_010_2024.pdf",
+        "insurance": "INS_SAHAM_TOY_010.pdf",
+        "tax_sticker": ["TAX_2024_TOY_010.jpg", "TAX_2023_TOY_010.jpg"]
+      },
+      "fonctionnalities": {
+        "air_condition": true,
+        "usb_input": false,
+        "seat_belt": true,
+        "audio_input": true,
+        "child_seat": false,
+        "bluetooth": false,
+        "sleeping_bed": false,
+        "onboard_computer": false,
+        "gps": false,
+        "luggage": true,
+        "water": true,
+        "additional_covers": false
+      },
+      "engine": {
+        "type": "Diesel",
+        "horsepower": 136,
+        "capacity": 2800
+      },
+      "transmission": "Manuelle",
+      "color": "Blanc",
+      "fuel_efficiency": {
+        "city": "10.5L/100km",
+        "highway": "8.2L/100km"
+      },
+      "license_plate": "LT-0123-DLA",
+      "registration": {
+        "state": "Littoral",
+        "expiry": "2025-06-30T00:00:00.000Z"
+      },
+      "owner": {
+        "name": "Établissement Scolaire Saint-Jean",
+        "address": "Akwa, Douala",
+        "phone": "+237 678 012 345",
+        "email": "transport@stjean-school.cm"
+      },
+      "service_history": [
+        {
+          "date": "2024-02-15T00:00:00.000Z",
+          "service_type": "Révision transport public",
+          "mileage": 48000,
+          "provider": "Toyota Douala Service"
+        },
+        {
+          "date": "2023-08-10T00:00:00.000Z",
+          "service_type": "Contrôle sécurité",
+          "mileage": 38000,
+          "provider": "Centre de Contrôle Technique Douala"
+        }
+      ],
+      "insurance": {
+        "provider": "Saham Assurance",
+        "policy_number": "SAH-CM-2024-010123",
+        "expiry": "2025-02-15T00:00:00.000Z"
+      },
+      "agency": {
+        "id": 1
+      },
+      "images": [
+        "toyota_hiace_front.jpg",
+        "toyota_hiace_interior.jpg",
+        "toyota_hiace_side.jpg"
+      ],
+      "reviews": [
+        {
+          "id": 13,
+          "reviewer_name": "Directeur Mbarga",
+          "reviewer_id": 113,
+          "comment": "Parfait pour nos sorties pédagogiques, très sûr.",
+          "rating": 5
+        },
+        {
+          "id": 14,
+          "reviewer_name": "Association des Parents",
+          "reviewer_id": 114,
+          "comment": "Excellent service pour les voyages de groupe.",
+          "rating": 5
+        }
+      ],
+      "likes": [
+        {
+          "id": 12,
+          "userId": 113,
+          "userName": "Directeur Mbarga",
+          "createdAt": "2024-06-18T10:15:00.000Z"
+        },
+        {
+          "id": 13,
+          "userId": 114,
+          "userName": "Association des Parents",
+          "createdAt": "2024-06-19T14:30:00.000Z"
+        },
+        {
+          "id": 14,
+          "userId": 115,
+          "userName": "Marie-Claire Fouda",
+          "createdAt": "2024-06-20T16:45:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": 6,
+          "userId": 113,
+          "userName": "Directeur Mbarga",
+          "userAvatar": "avatar_mbarga.jpg",
+          "comment": "Nous utilisons ce véhicule depuis 2 ans pour nos sorties scolaires, jamais eu de problème !",
+          "createdAt": "2024-06-18T10:30:00.000Z",
+          "replies": [
+            {
+              "id": 7,
+              "userId": 114,
+              "userName": "Association des Parents",
+              "userAvatar": "avatar_parents.jpg",
+              "comment": "Nous confirmons, très fiable et sécurisé pour nos enfants.",
+              "createdAt": "2024-06-19T14:45:00.000Z"
+            }
+          ]
+        }
+      ],
+      "shares": [
+        {
+          "id": 4,
+          "userId": 113,
+          "userName": "Directeur Mbarga",
+          "platform": "facebook",
+          "createdAt": "2024-06-18T11:00:00.000Z"
+        },
+        {
+          "id": 5,
+          "userId": 114,
+          "userName": "Association des Parents",
+          "platform": "whatsapp",
+          "createdAt": "2024-06-19T15:00:00.000Z"
+        }
+      ],
+      "totalLikes": 3,
+      "totalComments": 2,
+      "totalShares": 2,
+      "isLikedByCurrentUser": false,
+      "currentUserId": 200,
+      "favorite": true,
+      "available": true
+    }
+  ]
+}

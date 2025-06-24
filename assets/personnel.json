@@ -1,0 +1,242 @@
+{
+  "personnel": [
+    {
+      "id": 1,
+      "nom": "Dupont",
+      "prenom": "Marie",
+      "email": "marie.dupont@entreprise.com",
+      "telephone": "+237 6 12 34 56 78",
+      "poste": "Développeur Senior",
+      "departement": "Technique",
+      "dateEmbauche": "2022-03-15",
+      "salaire": 75000,
+      "statut": "Actif",
+      "adresse": "Yaoundé, Cameroun",
+      "photo": "https://images.unsplash.com/photo-1494790108755-2616b612b1f4?w=150&h=150&fit=crop&crop=face",
+      "competences": ["React Native", "TypeScript", "Node.js", "MongoDB"],
+      "calendrierService": {
+        "2025-06-06": true,
+        "2025-06-07": true,
+        "2025-06-08": false,
+        "2025-06-09": true,
+        "2025-06-10": true
+      },
+      "activites": [
+        {
+          "date": "2025-06-05",
+          "description": "Formation React Native avancé",
+          "duree": 8,
+          "statut": "Complété",
+          "type": "Formation"
+        },
+        {
+          "date": "2025-06-06",
+          "description": "Développement module paiement",
+          "duree": 6,
+          "statut": "En cours",
+          "type": "Projet"
+        }
+      ],
+      "statistiques": {
+        "formations": 12,
+        "projetsEnCours": 3,
+        "tauxPresence": 95.5,
+        "performance": 92
+      }
+    },
+    {
+      "id": 2,
+      "nom": "Martin",
+      "prenom": "Lucie",
+      "email": "lucie.martin@entreprise.com",
+      "telephone": "+237 6 87 65 43 21",
+      "poste": "Designer UX/UI",
+      "departement": "Création",
+      "dateEmbauche": "2023-01-10",
+      "salaire": 60000,
+      "statut": "Actif",
+      "adresse": "Douala, Cameroun",
+      "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      "competences": ["Figma", "Adobe XD", "Photoshop", "UI Design"],
+      "calendrierService": {
+        "2025-06-06": true,
+        "2025-06-07": false,
+        "2025-06-08": true,
+        "2025-06-09": true,
+        "2025-06-10": true
+      },
+      "activites": [
+        {
+          "date": "2025-06-04",
+          "description": "Design système mobile",
+          "duree": 7,
+          "statut": "En cours",
+          "type": "Projet"
+        },
+        {
+          "date": "2025-06-03",
+          "description": "Réunion équipe design",
+          "duree": 2,
+          "statut": "Complété",
+          "type": "Réunion"
+        }
+      ],
+      "statistiques": {
+        "formations": 8,
+        "projetsEnCours": 2,
+        "tauxPresence": 88.0,
+        "performance": 89
+      }
+    },
+    {
+      "id": 3,
+      "nom": "Kouame",
+      "prenom": "Jean",
+      "email": "jean.kouame@entreprise.com",
+      "telephone": "+237 6 55 44 33 22",
+      "poste": "Directeur Marketing",
+      "departement": "Marketing",
+      "dateEmbauche": "2021-09-20",
+      "salaire": 85000,
+      "statut": "Actif",
+      "adresse": "Yaoundé, Cameroun",
+      "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "competences": ["Marketing Digital", "SEO", "Google Ads", "Analytics"],
+      "calendrierService": {
+        "2025-06-06": true,
+        "2025-06-07": true,
+        "2025-06-08": true,
+        "2025-06-09": false,
+        "2025-06-10": true
+      },
+      "activites": [
+        {
+          "date": "2025-06-06",
+          "description": "Campagne publicitaire Q2",
+          "duree": 5,
+          "statut": "En cours",
+          "type": "Projet"
+        },
+        {
+          "date": "2025-06-05",
+          "description": "Formation Google Analytics 4",
+          "duree": 4,
+          "statut": "Complété",
+          "type": "Formation"
+        }
+      ],
+      "statistiques": {
+        "formations": 15,
+        "projetsEnCours": 1,
+        "tauxPresence": 92.3,
+        "performance": 95
+      }
+    },
+    {
+      "id": 4,
+      "nom": "Onana",
+      "prenom": "Clarisse",
+      "email": "clarisse.onana@entreprise.com",
+      "telephone": "+237 6 99 88 77 66",
+      "poste": "Comptable",
+      "departement": "Finance",
+      "dateEmbauche": "2022-11-05",
+      "salaire": 55000,
+      "statut": "En congé",
+      "adresse": "Douala, Cameroun",
+      "photo": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop&crop=face",
+      "competences": ["Comptabilité", "Excel", "SAP", "Audit"],
+      "calendrierService": {
+        "2025-06-06": false,
+        "2025-06-07": false,
+        "2025-06-08": false,
+        "2025-06-09": false,
+        "2025-06-10": false
+      },
+      "activites": [
+        {
+          "date": "2025-05-30",
+          "description": "Congé annuel",
+          "duree": 80,
+          "statut": "En cours",
+          "type": "Congé"
+        }
+      ],
+      "statistiques": {
+        "formations": 6,
+        "projetsEnCours": 0,
+        "tauxPresence": 97.8,
+        "performance": 87
+      }
+    },
+    {
+      "id": 5,
+      "nom": "Mbarga",
+      "prenom": "Paul",
+      "email": "paul.mbarga@entreprise.com",
+      "telephone": "+237 6 11 22 33 44",
+      "poste": "Responsable RH",
+      "departement": "Ressources Humaines",
+      "dateEmbauche": "2020-05-12",
+      "salaire": 70000,
+      "statut": "Actif",
+      "adresse": "Yaoundé, Cameroun",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      "competences": ["Gestion RH", "Recrutement", "Formation", "Droit du travail"],
+      "calendrierService": {
+        "2025-06-06": true,
+        "2025-06-07": true,
+        "2025-06-08": true,
+        "2025-06-09": true,
+        "2025-06-10": false
+      },
+      "activites": [
+        {
+          "date": "2025-06-06",
+          "description": "Entretien candidat développeur",
+          "duree": 1,
+          "statut": "En cours",
+          "type": "Réunion"
+        },
+        {
+          "date": "2025-06-05",
+          "description": "Formation management",
+          "duree": 6,
+          "statut": "Complété",
+          "type": "Formation"
+        }
+      ],
+      "statistiques": {
+        "formations": 20,
+        "projetsEnCours": 2,
+        "tauxPresence": 94.2,
+        "performance": 91
+      }
+    }
+  ],
+  "departements": [
+    "Marketing",
+    "Technique", 
+    "Création",
+    "Finance",
+    "Administration",
+    "Ressources Humaines"
+  ],
+  "postes": [
+    "Directeur Marketing",
+    "Développeur Senior",
+    "Designer UX/UI", 
+    "Comptable",
+    "Responsable RH",
+    "Chef de projet",
+    "Community Manager",
+    "Assistant administrative",
+    "Développeur Frontend"
+  ],
+  "statuts": [
+    "Actif",
+    "Inactif", 
+    "En congé",
+    "formation"
+  ]
+}
