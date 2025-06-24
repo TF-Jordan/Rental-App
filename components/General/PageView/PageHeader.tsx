@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Animated } from 'react-native';
+import {View, Text, StyleSheet, Animated, StatusBar} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import HEADER from "@/components/General/Header";
 import TabSelector from "@/components/General/TabSelector";
@@ -26,6 +26,8 @@ export default function PageHeader({header=true,logo = 'EASY-RENT', tabs, active
 
     // @ts-ignore
     return (
+        <>
+        <StatusBar barStyle="light-content" backgroundColor="#066AFF" />
         <LinearGradient
             colors={['#ffffff', '#ffffff']}
             style={styles.headerSection}
@@ -53,6 +55,7 @@ export default function PageHeader({header=true,logo = 'EASY-RENT', tabs, active
 
             )}
         </LinearGradient>
+        </>
     );
 }
 

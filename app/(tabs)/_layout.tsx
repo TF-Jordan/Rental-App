@@ -6,7 +6,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 export default function TabLayout(){
     return(
-        <Tabs screenOptions={{headerShown:false}}>
+        <Tabs screenOptions={{headerShown:false}} initialRouteName='Dashboard'>
 
 
             <Tabs.Screen
@@ -17,12 +17,20 @@ export default function TabLayout(){
                         <FontAwesome5 name="car-alt" size={24} color={color} />
                     ),
                 }}/>
+            <Tabs.Screen
+                name='Agencies'
+                options={{
+                    title:"Agences",
+                    tabBarIcon: ({ color, size }) => (
+                        <MaterialIcons name="garage" size={size} color={color}/>
+                    ),
+                }}/>
 
             <Tabs.Screen
                 name='Dashboard'
                 options={{
                     title:'Dashboard',
-                    tabBarIcon:({color,size})=>(<MaterialIcons name="dashboard" size={size} color={color} />),
+                    tabBarIcon:({color,size})=>(<MaterialIcons name="dashboard" size={size+5} color={color} />),
                 }}/>
 
 
@@ -34,15 +42,6 @@ export default function TabLayout(){
                     <MaterialCommunityIcons name="steering" size={size} color={color} />
                     ),
                 }}/>
-
-            <Tabs.Screen
-                name='Agencies'
-                options={{
-                    title:"Agences",
-                    tabBarIcon: ({ color, size }) => (
-                        <MaterialIcons name="garage" size={size} color={color}/>
-                    ),
-                }}/>
             <Tabs.Screen
                 name="Menu"
                 options={{
@@ -52,6 +51,8 @@ export default function TabLayout(){
                     ),
                 }}
             />
+
+
         </Tabs>
     )
 }

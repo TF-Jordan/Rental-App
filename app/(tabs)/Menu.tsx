@@ -105,7 +105,7 @@ const MenuPage: React.FC<MenuPageProps> = ({ onNavigate }) => {
 
             {/* Header */}
             <View style={styles.header}>
-                <Text style={styles.headerTitle}>Paramètres</Text>
+                <Text style={styles.headerTitle}>Menu</Text>
             </View>
 
             <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
@@ -126,14 +126,7 @@ const MenuPage: React.FC<MenuPageProps> = ({ onNavigate }) => {
 
                     <View style={styles.profileInfo}>
                         <Text style={styles.profileName}>Jordan</Text>
-                        <Text style={styles.profileStatus}>Propriétaire Premium • En ligne</Text>
-                    </View>
-
-                    <View style={styles.profileStats}>
-                        <View style={styles.statBadge}>
-                            <Text style={styles.statNumber}>4.8</Text>
-                            <Ionicons name="star" size={12} color="#FFD700" />
-                        </View>
+                        <Text style={styles.profileStatus}>Propriétaire Premium</Text>
                     </View>
                 </TouchableOpacity>
 
@@ -448,7 +441,7 @@ const MenuScreen: React.FC = () => {
                 router.push(`/Menu/TransactionScreen`);
                 break;
             case 'analytics':
-                // navigation.navigate('AnalyticsScreen');
+                router.push(`/(tabs)/Vehicles`)
                 break;
             case 'calendar':
                 // navigation.navigate('CalendarScreen');

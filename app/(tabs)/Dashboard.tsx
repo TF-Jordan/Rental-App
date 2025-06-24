@@ -1,13 +1,13 @@
 // app/tabs/Dashboard.tsx
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, Animated } from 'react-native';
-import StatCard from "@/components/dashboard/StatCard";
+import { View,StyleSheet, ScrollView, Animated } from 'react-native';
 import GraphStatCar from "@/components/dashboard/GraphStat";
 import PageHeader from "@/components/General/PageView/PageHeader";
 import usePageAnimation from "@/hooks/usePageAnimation";
-import { Colors } from '@/utils/colors';
-
-import { FontAwesome5, MaterialIcons, Feather, Entypo } from '@expo/vector-icons';
+import AgenciesData from "@/assets/Agency/agencies.json";
+import {Feather, Entypo } from '@expo/vector-icons';
+import AgencyStatistics from "@/components/Agency/AgencyStatComponents";
+import VehicleStats from "@/components/Car/tab/stats/VehicleStats";
 
 export default function Dashboard() {
     const [activeTab, setActiveTab] = useState('general');
@@ -28,45 +28,10 @@ export default function Dashboard() {
     ];
 
     const renderGeneralView = () => (
-        <Animated.View
-            style={[
-                styles.statsContainer,
-                getAnimatedStyle()
-            ]}
-        >
-                <View style={styles.cardContainer}>
-                    <StatCard
-                        title="Véhicules"
-                        value="70"
-                        subtitle='25% depuis le mois dernier'
-                        icon={<FontAwesome5 name="car" size={20} color={Colors.primary} />}
-                    />
-                </View>
-                <View style={styles.cardContainer}>
-                    <StatCard
-                        title="Chauffeurs"
-                        value="20"
-                        subtitle='15% depuis le mois dernier'
-                        icon={<Feather name="user" size={20} color={Colors.primary} />}
-                    />
-                <View style={styles.cardContainer}>
-                    <StatCard
-                        title="Revenus"
-                        value="1.008M XAF"
-                        subtitle='32% depuis le mois dernier'
-                        icon={<MaterialIcons name="attach-money" size={20} color={Colors.primary} />}
-                    />
-                </View>
-                <View style={styles.cardContainer}>
-                    <StatCard
-                        title="Commandes"
-                        value="247"
-                        subtitle='18% depuis le mois dernier'
-                        icon={<Feather name="bar-chart-2" size={20} color={Colors.primary} />}
-                    />
-                </View>
-            </View>
-        </Animated.View>
+               <>
+                  <VehicleStats/>
+                   <AgencyStatistics agencies={AgenciesData}/>
+               </>
     );
 
     const renderStatsView = () => (

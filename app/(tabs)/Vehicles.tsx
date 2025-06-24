@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import {View, StyleSheet, Alert} from 'react-native';
 import { Entypo, Feather } from '@expo/vector-icons';
-import Cars from "@/assets/Car/cars.json";
 
 import VehicleGeneralView from '@/components/Car/tab/general/VehicleGeneralView';
 import VehicleStatsView from '@/components/Car/tab/stats/VehicleStatsView';
